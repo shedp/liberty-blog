@@ -1,0 +1,91 @@
+:root {
+    --offred: #ed4f4f;
+    --offblack: #212427;
+}
+
+a {
+    text-decoration: none;
+    color: var(--offblack);
+}
+
+
+#posts {
+    width: 60%;
+    margin: 100px 20% 50px 20%;
+    padding: 15px;
+}
+
+.post {
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.separator {
+    padding: 0;
+    margin: 32px 5px 32px 5px;
+    height: 1px;
+    background-color: var(--offred);
+    width: 100%;
+}
+
+.post-body {
+    margin-bottom: 40px;
+}
+
+.post-alias,
+.post-date {
+    font-size: small;
+}
+
+footer {
+    background-color: var(--offred);
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    height: 40px;
+    padding-top: 15px;
+    color: whitesmoke;
+}
+
+.skeleton-box {
+    background-color: #DDDBDD;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    height: 2em;
+}
+
+.skeleton-box::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+20,f6f6f6+60,ffffff+60,ededed+100&0+0,0.2+20,0+20,0.5+60,0+100 */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(237, 237, 237, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(237, 237, 237, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(237, 237, 237, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ededed', GradientType=1);
+    /* IE6-9 */
+
+    animation: shimmer 2s infinite;
+    content: '';
+}
+
+@-webkit-keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}

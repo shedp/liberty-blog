@@ -1,0 +1,68 @@
+:root {
+    --offred: #ed4f4f;
+    --offblack: #212427;
+}
+
+main {
+    width: 100%;
+    margin: 120px 0% 0% 0%;
+    min-height: 74vh;
+}
+
+.title {
+    border-bottom: 2px solid var(--offred);
+    font-size: 50px;
+    text-align: left;
+    padding-left: 38%;
+    margin-bottom: 20px;
+    color: var(--offblack);
+}
+
+.grid {
+    display: grid;
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid * {
+    padding: 15px
+}
+
+.left-item {
+    grid-column: 1;
+    text-align: right;
+}
+
+.left-item .date {
+    padding: 0px;
+    color: var(--offred)
+}
+
+.left-item .alias {
+    padding: 5px 0px 0px 0px;
+    color: var(--offred)
+}
+
+.body {
+    grid-column: 2 / 4;
+    text-align: left;
+    color: var(--offblack);
+    padding: 0;
+}
+
+.body>p {
+    margin: 0;
+}
+
+footer {
+    position: relative;
+    background-color: var(--offred);
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    height: 40px;
+    padding-top: 15px;
+    color: whitesmoke;
+}

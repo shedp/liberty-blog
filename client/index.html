@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./static/favicon/site.webmanifest">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/index.css" id="index">
+    <script defer src="js/index.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/dark_index.js"></script>
+    <title>Liberty | Home</title>
+</head>
+
+<body>
+    <header>
+        <ul id="nav">
+            <button class="menu">menu</button>
+            <button class="darkmode" id="themeBtn"><img src="assets/darkmode.png" alt="darkmode"></button>
+            <li id="empty"></li>
+            <a href="index.html" class="nav-item">
+                <li class="li">create</li>
+            </a>
+            <a class="logo">L</a>
+            <a href="posts.html" class="nav-item">
+                <li class="li">posts</li>
+            </a>
+            <button class="darkmode empty"></button>
+        </ul>
+    </header>
+    <div class="main">
+        <form id="newPost">
+            <div>
+                <span id="titleError">Title must not be empty</span>
+                <span id="bodyError">Body must not be empty</span>
+            </div>
+            <input type="text" name="title" placeholder="title" id="title">
+            <input type="text" name="alias" placeholder="alias" id="alias">
+            <textarea id="newPost" name="body" placeholder="your post" rows="8"></textarea>
+            <input type="submit" value="publish">
+        </form>
+    </div>
+    <footer>
+        © LIBERTY
+    </footer>
+</body>
+
+</html>

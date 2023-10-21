@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./static/favicon/site.webmanifest">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/show.css" id="show">   
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/plugin/relativeTime.min.js"></script>
+    <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+    <script defer src="js/utils.js"></script>
+    <script defer src="js/requests.js"></script>
+    <script defer src="js/show.js"></script>
+    <script defer src="js/nav.js"></script>
+    <script defer src="js/dark_show.js"></script>
+    <title>Liberty | </title>
+</head>
+<body>
+    <ul id="nav">
+        <button class="menu">menu</button>
+        <button class="darkmode" id="themeBtn"><img src="assets/darkmode.png" alt="darkmode"></button>
+        <li id="empty"></li>
+        <a href="index.html" class="nav-item">
+            <li class="li">create</li>
+        </a>
+        <a class="logo">L</a>
+        <a href="posts.html" class="nav-item">
+            <li class="li">posts</li>
+        </a>
+        <button class="darkmode empty"></button>
+    </ul>
+    <main>
+        <h1 class="title"></h1>
+        <div class="grid">
+            <div class="left-item">
+                <div class="date"></div>
+                <div class="alias"></div>
+            </div>
+            <div class="body"></div>
+        </div>
+        <div class="next"></div>
+    </main>
+    <footer>
+        © LIBERTY
+    </footer>
+</body>
+</html>

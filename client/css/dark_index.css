@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+:root {
+    --offred: #ed4f4f;
+    --offblack: #212427;
+}
+
+body {
+    background-color: var(--offblack);
+}
+
+span {
+    display: block;
+    color: var(--offred);
+    transition: opacity 0.3s;
+}
+
+#titleError {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#bodyError {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.main {
+    margin-top: 230px;
+    margin: 95px 20% 0% 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 60%;
+    text-align: center;
+}
+
+.main input[type="text"],
+.main textarea {
+    display: block;
+    margin: 10px;
+    font-size: large;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: none;
+    color: whitesmoke;
+    background-color: var(--offblack);
+}
+
+.main #title {
+    font-size: xx-large;
+}
+
+.main input[type="text"]:focus,
+.main textarea:focus {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.main input[type="submit"] {
+    border: none;
+    color: whitesmoke;
+    background-color: var(--offred);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    background-color: var(--offred);
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    height: 40px;
+    padding-top: 15px;
+    color: whitesmoke;
+}
+
+::placeholder {
+    color: rgb(164, 164, 164);
+}
